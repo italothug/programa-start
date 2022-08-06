@@ -419,3 +419,43 @@ A melho codificação será alcançada quanto melhor for o algoritmo que repesen
 ## 10.B
 
 Explicando sobre o fluxograma de decisão
+
+# Aula 11 - Construindo um Algoritmo
+
+### Regras para a construção de algoritmos
+
+- Usar somente um verbo por frase:
+  - Imaginar que você está desenvolvendo um algoritmo para pessoas que não trabalham com informática;
+  - Usar frases curtas e simples;
+
+- Ser objetivo:
+  - Procurar usar palavras que não tenham senido dúbio.
+
+### Frases para a construção do algoritmo
+
+Ao montar um algoritmo, precisamos primeiro dividir o problema apresentado em três fases fundamentais:
+
+- Entrada de dados _Etapa 1_
+  - São os dados de entrar do algoritmo
+
+- Processamento _Etapa 2_
+  - São o procedimentos utilizados para chegar ao resultado final
+
+- Saída _Etapa 3_
+  - São os resultados obtidos pela fase de processamento
+
+# Aula 12 - Exercícios
+
+## 12.A
+
+Faça um algoritmo que receba dois números e ao final mostre o resultado da soma dos dois número lidos;
+
+Faça um algoritmo para informar á Joãozinho se ele foi aprovado na matéria de Lógica para programação. Joãozinho fez 3 provas e a média necessária para ser aprovado é de 7;
+
+Faça um algoritmo para preparar um macarrão instantâneo. Parta do princípio que você está na cozinha e deve prepará-lo e servi-lo.
+
+Escreva um algoritmo para determinar o consumo médio de um automóvel sendo fornecida a distância total percorrida pelo automóvel e o total de combustivel gasto;
+
+Faça um algoritmo para realizar a tarefa de tomar banho;
+
+## 12.B
