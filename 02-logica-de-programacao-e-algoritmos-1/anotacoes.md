@@ -91,3 +91,29 @@ Complemento do uso do ``se``
 Exemplo:
 
 [PRINT](./imagens/Screenshot_92.png)
+
+## 2.E
+
+Complemento do ``se``
+
+_Obs: pra cada ``se`` no código, deve ser colocado um ``fimse`` no final. Ex: 3 ``se`` no código = 3 ``fimse`` no final_
+
+[PRINT](./imagens/complemento-do-se.png)
+
+## 2.F
+
+### Tabela verdade
+
+Formas de usar o ``E``, ``&&``
+
+[PRINT](./imagens/forma-uso-e.png)
+
+Formas de usar o ``OU``, ``or``, ``||``
+
+[PRINT](./imagens/uso-ou.png)
+
+## 2.G
+
+Verificando se é um triângulo ou não (Exercicio de empresas)
+
+[PRINT](./imagens/exercicio-triangulo.png)
