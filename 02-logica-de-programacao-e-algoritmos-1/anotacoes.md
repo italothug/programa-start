@@ -147,3 +147,35 @@ Usando o operador de multipla escolha, ele só trabalha exclusivamente com igual
 [Print](./imagens/usando-o-escolha.png)
 
 ## 2.J
+
+### MOD e DIV
+
+- DIV
+
+Retorna o número inteiro em uma divisão, mesmo sendo um número quebrado, retornará apenas o número inteiro e não retornará os números depois da virgula
+
+[Exemplo](./imagens/DIV.png)
+
+- MOD ou %
+
+Retorna o resto da divisão, como se 10 / 3, o número mais próximo de dividir isso seria 9 e **iria sobrar o 1**
+
+[Exemplo](./imagens/MOD.png)
+
+A forma de uso seria pra saber se o número dito pelo o usuario é impar ou par
+
+[Exemplo](./imagens/par.png)
+
+Outra forma de uso é pra saber se o número dito pelo o úsuario é multiplo de algum número
+
+# Aula 03 - Operadores e Exercícios
+
+## 3.A
+
+### Operador "enquanto"
+
+``Enquanto = while``
+
+O ``enquanto`` irá rodar como um looping até oq está escrito nele ser atingido 
+
+[Exemplo](./imagens/ex5.png)
