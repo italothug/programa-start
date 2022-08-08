@@ -117,3 +117,33 @@ Formas de usar o ``OU``, ``or``, ``||``
 Verificando se é um triângulo ou não (Exercicio de empresas)
 
 [PRINT](./imagens/exercicio-triangulo.png)
+
+## 2.H
+
+### Operadores extras e conceito de curto circuito
+
+Operadores extras
+
+[Print](./imagens/operadores-extras.png)
+
+**Conceito de curto circuito**
+
+_É pelo o fato de o programa ler blocos em sequências, no exemplo a seguir, veremos um bloco vermelho, um azul e um verde. Então para poupar tempo e ter maior **desempenho**, se o primeiro bloco for verdade e o programa ver que está apto a passar para próxima fase, então não ira ler os blocos seguintes._
+
+[Print](./imagens/curto-circuito.png)
+
+## 2.I
+
+### Operador de multipla escolha
+
+_Não é obrigatório usa-lo, ele pode ser trocado por ``se`` e ``senao``_
+
+Alternativa da multipla usando o ``se``
+
+[Print](./imagens/alternativa_para_se.png)
+
+Usando o operador de multipla escolha, ele só trabalha exclusivamente com igualdade
+
+[Print](./imagens/usando-o-escolha.png)
+
+## 2.J
