@@ -179,3 +179,11 @@ Outra forma de uso é pra saber se o número dito pelo o úsuario é multiplo de
 O ``enquanto`` irá rodar como um looping até oq está escrito nele ser atingido 
 
 [Exemplo](./imagens/ex5.png)
+
+## 3.B
+
+### Operador "enquanto"
+
+Usando o ``se`` e ``interrompa`` dentro do ``enquanto`` para parar a contagem
+
+[Exemplo](./imagens/interrompa)
