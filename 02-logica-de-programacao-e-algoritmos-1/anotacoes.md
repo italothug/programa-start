@@ -187,3 +187,13 @@ O ``enquanto`` irá rodar como um looping até oq está escrito nele ser atingid
 Usando o ``se`` e ``interrompa`` dentro do ``enquanto`` para parar a contagem
 
 [Exemplo](./imagens/interrompa)
+
+## 3.C
+
+### Exercitando o "enquanto"
+
+- O IBGE tá fazendo uma pesquisa de idade das pessoas e no final vai querer saber: pessoa mais nova, mais velha, % de menores de idade e a média das idades
+
+[Variaveis](./imagens/declaracao-e-qtd-inicial.png) declaradas
+
+[Resolução](./imagens/resolucao-e-cmd.png) da questão + comentado e explicado
