@@ -197,3 +197,58 @@ Usando o ``se`` e ``interrompa`` dentro do ``enquanto`` para parar a contagem
 [Variaveis](./imagens/declaracao-e-qtd-inicial.png) declaradas
 
 [Resolução](./imagens/resolucao-e-cmd.png) da questão + comentado e explicado
+
+## 3.D
+
+### Operador "repita"
+
+A diferença do ``repita`` para o ``enquanto``, é que ele roda pelo menos 1 vez o seu código antes de repetir e fazer alguma alteração
+
+Outra forma de escrever o ``repita`` em outras linguagens é
+
+"``do``
+
+``while``"
+
+[Exemplo](./imagens/ex-repita.png)
+
+Criar uma senha e ter acertar ela em dentro de 5 tentativas
+
+[Senha](./imagens/ex-senha.png)
+
+## 3.E
+
+Criando menu para pagar conta da manutenção do veiculo
+
+[Exemplo](./imagens/conta.png)
+
+## 3.F
+
+### Operador "para"
+
+Melhor amigo de vetores
+
+O operador ``para`` faz com que a variavel vá de um número ao outro de forma mais simples, podendo colocar condições
+
+[Exemplo](./imagens/ex-para.png)
+
+## 3.G
+
+### Complemento "passo" no operador "para"
+
+O complemento ``passo`` funciona como uma forma do uso do ``MOD``, porém ele é mais simples
+
+[Exemplo](./imagens/ex-passo.png)
+
+Nele pode ser usado o:
+- 2 -> que irá pular o número de 2 em 2
+- 3 -> que irá pular o número de 3 em 3
+- -1 -> que invertendo os números do complemento ``para`` você consegue colocar invertido, EX:
+  - Normal: ``para i de 10 ate 100 passo 5 faca``
+  - Invertido: ``para i de 100 ate 10 passo -5 faca``
+
+Também é possivel declarar variáveis com os valores e colocar no Operador ``para``
+
+[Exemplo](./imagens/ex-passo-2.png)
+
+## 3.H
