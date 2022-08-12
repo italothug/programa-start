@@ -252,3 +252,12 @@ Também é possivel declarar variáveis com os valores e colocar no Operador ``p
 [Exemplo](./imagens/ex-passo-2.png)
 
 ## 3.H
+
+### Função "aleatorio"
+
+Uma função que você pode sortear um número
+
+[Exemplo](./imagens/ex-aleatorio.png)
+
+## 3.I
+
