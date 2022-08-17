@@ -186,7 +186,7 @@ O ``enquanto`` irá rodar como um looping até oq está escrito nele ser atingid
 
 Usando o ``se`` e ``interrompa`` dentro do ``enquanto`` para parar a contagem
 
-[Exemplo](./imagens/interrompa)
+[Exemplo](./imagens/interrompa.png)
 
 ## 3.C
 
