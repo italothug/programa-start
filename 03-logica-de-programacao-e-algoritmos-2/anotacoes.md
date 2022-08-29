@@ -133,28 +133,143 @@ Resposta
 
 # Aula 03 - Banco de Dados
 
+## Comandos
+
+``CREATE TABLE`` + NOME (Nome no plural) : Serve pra criar uma tabela
+
+``DROP TABLE`` + NOME : Serve pra deletar uma tabela
+
+``ID`` : É um ID pra cada registro na tabela
+
+``INT`` : Inteiro ( Usado junto ao ID )
+
+``PRIMARY KEY`` : Chave única ( Usado pra indicar que o ID é único)
+
+``AUTO-INCREMENT`` : Garante que você nunca vai precisar criar um ID / Vai se auto receber um valor
+
+``VARCHAR`` : Mesma função de ``caractere`` e usasse ``(Algum número aqui)`` pra dizer que tem um máximo de letras que podem ser escritas
+
+``NOT NULL`` : Obrigatório informar o nome
+
+``BIT`` : Parecido com o operador lógico, onde recebe a resposta de SIM ou NÃO
+
+``NVARCHAR`` : Tem a mesma função do ``VARCHAR``, só q aceita caracteres extras, como alfabeto arabico, russo, entre outros, que possuem simbolos
+
+``WHERE`` : É obrigatório no código, ele serve pra especificar em qual dos ``ID's`` você quer editar o valor, se não tiver o ``WHERE`` no código, mudará o valor de todos os registros
+
+``CHAR`` : É usado quando você quer um número exato de letras naquela variavel, um bom exemplo é o CPF
+
+``DATE`` : Registrar data sem ocupar muitos espaços da memória
+
+``DATETIME`` : Mesma função de date, porém vc registra a hora tbm
+
+``FLOAT`` : Número com virgula, números reais
+
+``REAL`` : Número com virgula, números reais
+
+_Diferença entre ``FLOAT`` e ``REAL`` é que o **REAL** é mais completo pra grande escala, **FLOAT** é mais simples_
+
 ## 3.A
 
 Banco de dados: qualquer repositório que você guarda informações
 
 Comando para criar tabela é:
 
-``CREATE TABLE`` + NOME (Nome no plural)
+``CREATE TABLE`` + NOME (Nome no plural) : Serve pra criar uma tabela
 
-``ID`` : Substitui os nomes das pessoas
+``DROP TABLE`` + NOME : Serve pra deletar uma tabela
 
-``INT`` : Inteiro
+``ID`` : É um ID pra cada registro na tabela
 
-``PRIMARY`` : Único
+``INT`` : Inteiro ( Usado junto ao ID )
 
-``AUTO-INCREMENT`` : Garante que você nunca vai precisar criar um ID
+``PRIMARY KEY`` : Chave única ( Usado pra indicar que o ID é único)
+
+``AUTO-INCREMENT`` : Garante que você nunca vai precisar criar um ID / Vai se auto receber um valor
 
 ``VARCHAR`` : Mesma função de ``caractere`` e usasse ``(Algum número aqui)`` pra dizer que tem um máximo de letras que podem ser escritas
 
-``NOT NULL`` : Obrigatório informar o nome
+``NOT NULL`` : Obrigatório informar o valor da variavel
 
 [Exemplo](./imagens/ex-bda.png)
 
 ## 3.B
 
 Inserindo registro no banco de dados
+
+``NVARCHAR`` : Tem a mesma função do ``VARCHAR``, só q aceita caracteres extras, como alfabeto arabico, russo, entre outros, que possuem simbolos
+
+Forma correta de registrar uma pessoa no banco de dados
+
+[Exemplo](./imagens/ex-bda-2.png)
+
+É obrigatório colocar entre aspas simples `'Exemplo'` para o banco de dados reconhecer que isso é um `caractere`, se colocar fora disso, ele reconhece como `número` 
+
+## 3.C
+
+Forma certa de editar registro no banco de dados
+
+[Exemplo](./imagens/ex-bda-3.png)
+
+``WHERE`` : É obrigatório no código, ele serve pra especificar em qual dos ``ID's`` você quer editar o valor, se não tiver o ``WHERE`` no código, mudará o valor de todos os registros
+
+Forma certa de excluir registro do banco de dados
+
+``DELETE FROM CLIENTES WHERE ID = 2``
+
+``WHERE`` Sendo obrigatório novamente, para não apagar todos os registros existentes no sistema
+
+## 3.D
+
+Forma de apagar/excluir tabela do banco de dados por código/comando
+
+``DROP TABLE NOMETABELA``
+
+``CHAR`` : É usado quando você quer um número exato de letras naquela variavel, um bom exemplo é o CPF
+
+``DATE`` : Registrar data sem ocupar muitos espaços da memória
+
+``DATETIME`` : Mesma função de date, porém vc registra a hora tbm
+
+``BIT`` : Parecido com o operador lógico, onde recebe a resposta de SIM ou NÃO
+
+## 3.E
+Forma de fazer multiplas tabelas e fazer integração/ligação entre si
+
+``FLOAT`` : Número com virgula, números reais
+
+``REAL`` : Número com virgula, números reais
+
+_Diferença entre ``FLOAT`` e ``REAL`` é que o **REAL** é mais completo pra grande escala, **FLOAT** é mais simples_
+
+``FOREIGN KEY`` : Chave estrangeira, ela vai ligar uma tabela á outra, especificando em qual tabela deve ir o valor
+
+- Passo a passo da integração
+  - [Passo-1](./imagens/passo1.png) - Primeiro, você faz a tabela que vai ser integrada á outra
+  - [Passo-2](./imagens/passo2.png) - Segundo, você faz a tabela que vai integrar, vai receber a integração, vai acontecer tudo nela
+  - [Passo-3](./imagens/passo3.png) - Terceiro, você vai dar o valor para a primeira tabela
+  - [Passo-4](./imagens/passo4.png) - Quarto, você vai dar os valores da segunda tabela e integrar a categoria no produto
+
+## 3.F
+
+Relacionamentos entre tabelas
+
+- [Passo-1](./imagens/passo1-2.png) // Criando tabela de informação sobre a venda
+
+- [Passo-2](./imagens/passo2-2.png) // Criando tabela de informações contidas na venda
+
+Se colocar ``PRIMARY KEY`` logo no começo, o ``IDVENDA`` ou ``IDPRODUTOS`` só vai poder repetir uma vez e esse não é o intuito
+
+``VALORPRODUTO`` na tabela ``ITENS_VENDAS`` vai servir pra quando tiver promoção, tiver comissão, com isso valor vai poder ser ajustado
+
+- [Passo-3](./imagens/passo3-2.png) // Inserindo produto no estoque
+
+- [Passo-4](./imagens/passo4-2.png) // Registrando a venda do produto
+
+- [Passo-5](./imagens/passo5-2.png) // Registrando informações da venda 
+
+- [Passo-6](./imagens/passo6-2.png) // Registrando informações da venda 2
+
+## 3.G
+
+Forma de fazer pesquisa no banco de dados
