@@ -211,6 +211,16 @@ Forma certa de editar registro no banco de dados
 
 [Exemplo](./imagens/ex-bda-3.png)
 
+===================================================
+
+``UPDATE CLIENTES SET NOME = 'Italo C Lima', CPF = '70070070090'``
+
+``WHERE ID = 1``
+
+**Tradução**: ``UPDATE`` _(Nome da tabela)_ ``SET`` _(Nome da coluna)_ ``=`` _('Item da coluna que vai ser modificado')_ ``WHERE ID =`` _(ID da linha que vai ser modificado)_
+
+===================================================
+
 ``WHERE`` : É obrigatório no código, ele serve pra especificar em qual dos ``ID's`` você quer editar o valor, se não tiver o ``WHERE`` no código, mudará o valor de todos os registros
 
 Forma certa de excluir registro do banco de dados
@@ -273,3 +283,123 @@ Se colocar ``PRIMARY KEY`` logo no começo, o ``IDVENDA`` ou ``IDPRODUTOS`` só 
 ## 3.G
 
 Forma de fazer pesquisa no banco de dados
+
+- **Exemplo 1**: Quero mostrar ID, PRECO, DESCRIÇÃO da tabela PRODUTOS
+
+===================================================
+
+``SELECT ID, PRECO, DESCRICAO FROM PRODUTOS``
+
+**Tradução**: ``SELECT`` _(Colunas á serem pesquisadas)_ ``FROM`` _(Tabela pra ser pesquisada)_
+
+**Tradução simplificada:** _Selecionar(**SELECT**) os itens da(**FROM**) tabela_ ``produtos``
+
+===================================================
+
+- **Exemplo 2**: Quero mostrar todas as colunas da tabela PRODUTOS
+
+===================================================
+
+``SELECT * FROM PRODUTOS``
+
+**Tradução**: ``SELECT * FROM`` _(Tabela pra ser pesquisada)_
+
+**Tradução simplificada:** _Selecionar(**SELECT**) todos(__*__) os itens da(**FROM**) tabela_ ``produtos``
+
+===================================================
+
+- **Exemplo 3**: Quero mostrar todas as colunas da tabela _PRODUTOS_ mas não quero mostrar o _ID_ da _CATEDORIAID_, quero mostrar o nome registrado na tabela _CATEGORIA_
+
+===================================================
+
+``SELECT P.ID, P.DESCRICAO, P.PRECO, P.QTDESTOQUE, C.NOME``
+
+``FROM PRODUTOS P INNER JOIN CATEGORIAS C``
+
+``ON C.ID = P.CATEGORIAID`` : O que linka é q a tabela _CATEGORIAS_ tem uma coluna **ID** e a tabela _PRODUTOS_ tem uma coluna **CATEGORIA** que chama o **ID** da tabela _CATEGORIAS_
+
+**Tradução**: ``SELECT`` _(Itens com a inicial do nome da tabela)_ ``FROM`` _(Nome da tabela + Inicial)_ ``INNER JOIN`` _(Nome da tabela que tem integração + Inicial)_ ``ON`` _(Inicial + Nome da coluna que está linkada diretamente á coluna da tabela principal)_ ``=`` _(Inicial + nome da coluna principal que recebeu o valor da outra tabela)_
+
+**Tradução simplificada:** _Selecionar(**SELECT**) os seguintes itens da(**FROM**) tabela_ ``PRODUTOS`` _que possui ligação(**INNER JOIN**) com a tabela_ ``CATEGORIAS``, _a ligação(**ON**) acontece entre o ``ID`` de **categorias** e o ``CATEGORIAID`` de **produtos**_
+
+===================================================
+
+- **Exemplo 4**: Mudar o nome da coluna da tabela
+
+===================================================
+
+``SELECT P.ID, P.DESCRICAO, P.PRECO, P.QTDESTOQUE, C.NOME 'CATEGORIA'`` : A coluna **NOME** será trocada por **CATEGORIA**
+
+===================================================
+
+- **Exemplo 5**: Colocar um filtro pra mostrar umas tabelas especificas, Como _**preço < 10**_
+
+===================================================
+
+``WHERE P.PRECO < 10``
+
+``WHERE P.PRECO < 10 OR P.QTDESTOQUE > 10``
+
+``WHERE P.PRECO < 10 AND P.QTDESTOQUE > 10``
+
+_Observação: Para ser aplicada, é necessário colocar isso após o **Exemplo 3**_
+
+===================================================
+
+São exemplos de filtros
+
+## 3.H
+
+Mostrando o valor total
+
+===================================================
+
+**Exemplo 1**: Exemplo de caso vendesse tudo do estoque, qual seria o retorno?
+
+``SELECT P.ID 'CÓDIGO', P.DESCRICAO, (P.PRECO * P.QTDESTOQUE) 'TOTAL', C.NOME ``
+
+``FROM PRODUTOS P INNER JOIN CATEGORIAS C``
+
+``ON P.CATEGORIAID = C.ID``
+
+**Tradução**: _**Selecionar**``(SELECT)`` o **ID de produtos**``(P.ID)`` depois troque o nome pra **código**``('CÓDIGO')``, selecionar **descrição de produtos**``(P.DESCRICAO)``, fazer a **soma total entre preço e estoque**``(P.PRECO * P.QTDESTOQUE)`` pra saber o total que seria vendido, **depois troque o nome dessa soma pra total**``('TOTAL')``, depois selecione o **item nome na tabela categorias**``(C.NOME)``. Todas essas seleções **serão da**``(FROM)`` **tabela produtos, inicial P**``(PRODUTOS P)``, e com **ligação**``(INNER JOIN)`` á tabela **categorias, inicial C**``(CATEGORIAS C)``, essas duas **possuem ligações**``(ON)`` entre o item **CATEGORIAID da tabela produtos**``(P.CATEGORIAID)`` e o **ID da tabela categorias**``(C.ID)``_
+
+===================================================
+
+**Exemplo 2**: Quero saber o valor final que foi vendido os últimos produtos
+
+``SELECT IDPRODUTO, (VALORPRODUTO - (VALORPRODUTO * DESCONTO / 100)) FROM ITENS_VENDAS``
+
+===================================================
+
+``COUNT`` : _Faz a contagem de registros e com ele, você pode fazer um agrupamento_
+
+**Exemplo 3**: Somar os itens que possuem aquela categoria e mostrar quantos tem em cada item
+
+``SELECT COUNT(P.ID), C.NOME FROM PRODUTOS P INNER JOIN CATEGORIAS C``
+
+``ON P.CATEGORIAID = C.ID``
+
+``GROUP BY P.CATEGORIAID``
+
+_Obs: JUNTANDO TODOS OS ITENS QUE POSSUEM O MESMO CATEGORIAID_
+
+===================================================
+
+**Exemplo 4**: Organizar a tabela de acordo com uma coluna especifica
+
+`SELECT * FROM PRODUTOS ORDER BY DESCRICAO`
+
+_Obs: Se adicionar_ ``DESC`` _no final, invés de ficar na ordem crescente, fica na ordem decrescente_
+
+`SELECT * FROM PRODUTOS ORDER BY DESCRICAO DESC`
+
+===================================================
+
+# Aula 04 - Orientação Objetos
+
+## 4.A
+
+Exemplo 1: Criar uma variavel que dê para armazenar 3 tipos de dados diferentes, como nome, cpf e idade.
+
+[Exemplo1](./imagens/aula4-ex1.png)
