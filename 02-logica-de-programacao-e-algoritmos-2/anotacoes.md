@@ -400,6 +400,75 @@ _Obs: Se adicionar_ ``DESC`` _no final, invés de ficar na ordem crescente, fica
 
 ## 4.A
 
-Exemplo 1: Criar uma variavel que dê para armazenar 3 tipos de dados diferentes, como nome, cpf e idade.
+**Exemplo 1**: Criar uma variavel que dê para armazenar 3 tipos de dados diferentes, como nome, cpf e idade.
 
 [Exemplo1](./imagens/aula4-ex1.png)
+
+## 4.B
+
+**Exemplo 2**: Criar uma variavel que dê para armazenar 3 tipos de dados diferentes, como nome, cpf e idade, e depois dê pra consultar nome, cpf e idade da pessoa
+
+[Exemplo2-1](./imagens/aula4-ex2-1.png)
+[Exemplo2-2](./imagens/aula4-ex2-2.png)
+
+### Código do exemplo 2
+
+Tipo
+cadastroCliente = registro
+   nome : caractere
+   cpf : caractere
+   idade : inteiro
+fimregistro
+Var
+clientes : vetor[1..3] de cadastroCliente
+opcao, pesquisa : caractere
+i : inteiro
+Inicio
+
+repita
+   escreval("1 - Cadastrar")
+   escreval("2 - Pesquisar")
+   escreval("3 - Sair")
+   leia(opcao)
+   limpatela
+
+   se opcao = "1" entao
+      para i de 1 ate 3 faca
+         se clientes[i].nome = "" entao
+            escreval("Nome: ")
+            leia(clientes[i].nome)
+            escreval("CPF: ")
+            leia(clientes[i].cpf)
+            escreval("Idade: ")
+            leia(clientes[i].idade)
+            interrompa
+         fimse
+      fimpara
+   senao
+   se opcao = "2" entao
+      escreval("Digite o CPF")
+      leia(pesquisa)
+      para i de 1 ate 3 faca
+         se pesquisa = clientes[i].cpf entao
+            escreval("Cliente ",clientes[i].nome," encontrado.")
+            interrompa
+         fimse
+      fimpara
+      se pesquisa <> clientes[i].cpf entao
+         escreval("Cliente não encontrando")
+      fimse
+   fimse
+   fimse
+ate opcao = "3"
+      
+Fimalgoritmo
+
+## 4.C
+
+**Exemplo 3**: Conceito de herança / Polimorfismo
+
+Quando a pessoa pode ser alguém fisico ou juridico de acordo de como é chamado no código
+
+[Exemplo3](./imagens/aula4-ex3.png)
+
+**Exemplo 4**: É possivel várias variaveis com o mesmo tipo
