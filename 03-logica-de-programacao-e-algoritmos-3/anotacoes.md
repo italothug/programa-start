@@ -1,6 +1,23 @@
 # Aula 01 - Boas Vindas
 
 ## Comandos
+- Operadores
+  - `+ adição`
+  - `- subtração`
+  - `* multiplicação`
+  - `/ divisão`
+  - `% resto da divisão`
+- Operadores relacionais
+  - `> : Maior que`
+  - `< : Menor que`
+  - `>= : Maior ou igual á`
+  - `<= : Menor ou igual á`
+  - `== : Igual á`
+  - `!= : Diferente de`
+- Operadores lógicos
+  - `&&` : É o mesmo que o `E/AND` do Portugol/Visualg
+  - `||` : É o mesmo que o `OU/OR` do Portugol/Visualg
+  - `!` : Negação / Não quero q uma coisa seja verdade
 - ``System.out.println();`` = ``Escreval()`` do Portugol
 - ``// Comentário de linha``
 - ``/* Comentário de bloco */``
@@ -12,15 +29,34 @@
   - Forma de criar um leitor para dentro do **JAVA**
 - ``var nome = leitor.nextVar();`` = ``Leia`` do Portugol
   - Forma de ler o próximo dado que se encaixaria naquela variavel
-- Tipos de ``Var``
-  - `int` 
-    - Variavel de número INTEIRO
-  - ``float`` e ``double`` 
-    - Variaveis de número REAL
-    - Diferença:
-      - O double tem mais precisão: pode representar mais casas decimais ou números inteiros maiores;
-      - O double ocupa 32 bits a mais que o float (o dobro do espaço);
-      - Dependendo do hardware, o cálculo de um ou outro será mais rápido. Placas de vídeo geralmente operam com floats, as mais novas, com doubles.
+- Tipos de ``Variaveis`` primitivas
+  - `int` : 
+    - número inteiro
+  - `float` : 
+    - número real, ex: 5.0f (O **f** é obrigatório para dizer que a variavel tem o tipo `float`)
+  - `double` : 
+    - número com virgula (Um pouco mais pesado que o float), ex: 4.0d (O **d** é obrigatório para dizer que a variavel tem o tipo `double`)
+  - `char` : 
+    - armazena uma única letra, como por ex: Masculino(**M**) Feminino(**F**)
+  - `byte` : 
+    - armazena número inteiro de 8-bit, de 0 a 255
+  - `boolean` : 
+    - armazena valores lógicos, como verdadeiro(**true**) ou falso(**false**)
+- Tipos de `Variaveis` não primitivas
+  - `String` : 
+    - armazena textos, ex: `String nome = "Essa é uma variável do tipo String";`
+- `if( ){ }` : (Aula 4.H)
+    - Se + condição + o que fazer, [Exemplo2](./imagens/aula4-ex2.png)
+- `else` : 
+     - É o mesmo que o `Senao` do Portugol
+- `Switch` : (Aula 4.I)
+  - Escolha do Visualg
+- `Case 1` : 
+  - Caso 1
+- `Break` : 
+  - Interrompa
+- `Default` : 
+  - Outrocaso
 
 ## 1.A
 
@@ -95,3 +131,72 @@ O ``Java`` não possui um _leitor / comando de entrada e saída_, então sabendo
 Exemplo de uso dos comandos de _entrada_ e _saída_ // ``Leia`` e ``Escreval``
 
 [Exemplo-1](./imagens/aula4-ex1.png)
+
+## 4.F
+
+Variaveis, tipos e operadores
+
+- Variaveis
+  - Para criar uma variavel é necessário o _( tipo da variavel, nome e o ponto e virgula )_, ex: ``int idade;``
+  - Também é possivel adicionar o valor na mesma linha da variavel, só colocar o _( = valor )_, ex: ``int idade = 20;``
+
+- Tipos primitivos de variaveis
+  - `int` : 
+    - número inteiro
+  - `float` : 
+    - número real, ex: 5.0f (O **f** é obrigatório para dizer que a variavel tem o tipo `float`)
+  - `double` : 
+    - número com virgula (Um pouco mais pesado que o float), ex: 4.0d (O **d** é obrigatório para dizer que a variavel tem o tipo `double`)
+  - `char` : 
+    - armazena uma única letra, como por ex: Masculino(**M**) Feminino(**F**)
+  - `byte` : 
+    - armazena número inteiro de 8-bit, de 0 a 255
+  - `boolean` : 
+    - armazena valores lógicos, como verdadeiro(**true**) ou falso(**false**)
+
+- Tipos não primitivos de variaveis
+  - `String` : 
+    - armazena textos, como se fosse o `Escreval` do Portugol, ex: `String nome = "Essa é uma variável do tipo String";`
+
+- Operadores
+  - `+ adição`
+  - `- subtração`
+  - `* multiplicação`
+  - `/ divisão`
+  - `% resto da divisão`
+
+## 4.G
+- Estruturas condicionais
+  - `if` : 
+    - É o `Se` do Portugol
+  - `switch` : 
+    - É o `Escolha caso` do Portugol
+
+## 4.H
+- Estrutura condicional
+  - `if( ){ }` : 
+    - Se + condição + o que fazer, [Exemplo2](./imagens/aula4-ex2.png)
+  - `else` : 
+     - É o mesmo que o `Senao` do Portugol
+
+- Operadores relacionais
+  - `> : Maior que`
+  - `< : Menor que`
+  - `>= : Maior ou igual á`
+  - `<= : Menor ou igual á`
+  - `== : Igual á`
+  - `!= : Diferente de`
+  
+- Operadores lógicos
+  - `&&` : É o mesmo que o `E/AND` do Portugol/Visualg
+  - `||` : É o mesmo que o `OU/OR` do Portugol/Visualg
+  - `!` : Negação / Não quero q uma coisa seja verdade
+
+## 4.I
+
+Segunda estrutura condicional
+
+- `Switch` : Escolha do Visualg
+- `Case 1` : Caso 1
+- `Break` : Interrompa
+- `Default` : Outrocaso
