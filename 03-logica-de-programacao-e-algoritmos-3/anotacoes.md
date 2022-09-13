@@ -27,7 +27,7 @@
   - Leitor / Comando de entrada e saida do **JAVA**
 - ``Scanner leitor = new Scanner(System.in);``
   - Forma de criar um leitor para dentro do **JAVA**
-- ``var nome = leitor.nextVar();`` = ``Leia`` do Portugol
+- ``nome da variavel = leitor.nextVar();`` = ``Leia`` do Portugol
   - Forma de ler o próximo dado que se encaixaria naquela variavel
 - Tipos de ``Variaveis`` primitivas
   - `int` : 
@@ -45,7 +45,7 @@
 - Tipos de `Variaveis` não primitivas
   - `String` : 
     - armazena textos, ex: `String nome = "Essa é uma variável do tipo String";`
-- `if( ){ }` : (Aula 4.H)
+- `if( ){ }` : _( Aula 4.H )_
     - Se + condição + o que fazer, [Exemplo2](./imagens/aula4-ex2.png)
 - `else` : 
      - É o mesmo que o `Senao` do Portugol
@@ -57,6 +57,11 @@
   - Interrompa
 - `Default` : 
   - Outrocaso
+- `For` _( Aula 4.L )_
+  - **Para** do Visualg
+
+- `While` 
+  - **Enquanto** do Visualg
 
 ## 1.A
 
@@ -200,3 +205,43 @@ Segunda estrutura condicional
 - `Case 1` : Caso 1
 - `Break` : Interrompa
 - `Default` : Outrocaso
+
+[Metodo](./imagens/metodo-escolha-switch.png)
+
+## 4.J
+
+Exercicios ..
+
+## 4.K
+
+Inicio da estrutura de repetição
+
+Para = For
+
+Enquanto = While
+
+## 4.L
+
+Estrutura de repetição `For / Para`
+  - É uma estrutura de repetição
+  - Ela é aplicada na circunstância que você sabe quantas vezes aquilo deve ser repetido
+  - A variavel pode ser criada dentro da estrutura
+
+- `for(int i = 0; i <= 10; i++/i = i + 1){}`
+    - tradução: `for`(variavel de controle/criação da variavel; condição de parada; incremento/aumento da variavel )
+
+## 4.M
+
+Estrutura de repetição `While / Enquanto`
+- A parada da repetição depende de que algo aconteça 
+
+Exemplo aplicando `while`: [Exemplo](./imagens/estrutura-while.png)
+
+## 4.N
+
+Exercicio com estrutura de repetição
+
+Exercicio 24
+
+## 4.O
+
