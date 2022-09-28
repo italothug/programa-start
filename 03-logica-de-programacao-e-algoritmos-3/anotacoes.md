@@ -245,3 +245,110 @@ Exercicio 24
 
 ## 4.O
 
+Exercicio com estutura de repetição 2
+
+Exercicio 22
+
+## 4.P
+
+Exercicio 22 (Continuação)
+
+## 4.Q
+
+Programação orientada á objetos
+- Pegar um problema, passar a realidade do mundo para o sistema
+- Envolve 4 principios básico
+  - Polimorfismo
+  - Herança
+  - Abstração
+    - Fazer o reconhecimento do que é importante no mundo real e trazer para dentro do algoritmo
+  - Encapsulamento
+    - É uma forma de segurança, que funciona parecido com uma pessoa, que ela sabe das suas próprias informações
+
+## 4.R
+
+Conceito de classe
+- Ela é uma forma do meu objeto
+- A classe descreve uma entidade, ex: Pessoa
+
+## 4.S
+
+`Public` : Procedimentos e Funções do Visualg
+
+## 4.T
+
+Continuação de procedimentos e funções
+
+**Classe main** é o código onde fica os _códigos principais_ e a **classe pessoa** é onde fica os _procedimentos_ que serão implementados na classe main
+
+[Main](./imagens/procedimento-funcao-main.png)
+
+[Pessoa](./imagens/procedimento-funcao-pessoa.png)
+
+## 4.U
+
+Modificadores de acesso / Procedimento
+
+Nos métodos anteriores, criamos formas erradas de mandar valores para classe pessoa, nesse novo método, iremos aprender a forma certa
+
+Isso vai fazer com que a classe se torne mais privada e com dificil acesso
+
+[Main](./imagens/procedimento-funcao-main-private.png)
+
+[Pessoa](./imagens/procedimento-funcao-pessoa-private.png)
+
+## 4.V
+
+Metódos construtores
+- Vai servir para levar um valor padrão de uma classe á outra
+
+Exemplo: Da classe [Pessoa](./imagens/metodo-construtor-pessoa.png) para a classe [Main](./imagens/metodo-construtor-main.png)
+
+## 4.W
+
+Herança no Java
+
+_Observação: O Date é uma variavel que não é nativa do Java, então é necessário importar, e o próprio Apache faz isso automatico, segue o exemplo:_ [Etapa1](./imagens/import-auto1.png) [Etapa2](./imagens/import-auto2.png)
+
+
+Forma rápida de escrever todos os metódos acessores (Get e Set):
+- Alt + Insert em alguma parte do código
+- Vá na opção "Getter and Setter"
+- Marca todas a opções e clica em "Generate"
+
+[Print1](./imagens/get-e-set-p1.png)
+
+[Print2](./imagens/get-e-set-p2.png)
+
+## 4.X
+
+Metódo certo de usar Herança no Java
+- Forma de identificar herança, é sabendo o tipo da classe, ex: Vendedor ( é um tipo de Funcionário )
+- Usando o `extends + classe`, por ex: `Vendedor extends Funcionario`, o vendedor irá ter tudo q o funcionário tem. [PRINT](./imagens/heranca-extends.png)
+
+## 4.Y
+
+Continuando o metódo herança no Java
+- Quando estou na classe Vendedor e quero pegar um comando da classe Funcionário, é necessário usar o comando `super()`
+  - Motivo: Pq quando você está na classe Vendedor e a mesma está extendida para classe Funcionário, é como se você estivesse em baixo e o Funcionário estivesse em cima, então para vc acessar a parte de cima, vc usa o `super()`
+  
+  [Exemplo](./imagens/metodo-heranca-super.png)
+- `This` é usado para pegar metodos da mesma classe
+
+# Aula 05 - Exercícios Lógicos
+## 5.A
+Exercicio
+20. A concessionária de veículos “CARANGO VELHO” está vendendo os seus veículos com desconto. Faça
+um algoritmo que calcule e exiba o valor do desconto e o valor a ser pago pelo cliente de vários carros. O
+desconto deverá ser calculado de acordo com o ano do veículo. Até 2000 - 12% e acima de 2000 - 7%. O
+sistema deverá perguntar se deseja continuar calculando desconto até que a resposta seja: “(N) Não”.
+Informar total de carros com ano até 2000 e total geral;
+
+[Como fiz](./imagens/exercicio-20-eu.png)
+
+Professor fez [Parte 1](./imagens/exercicio-20-certo-1.png) / [Parte 2](./imagens/exercicio-20-certo-2.png)
+
+## 5.B
+Exercicio 20 (Continuação)
+
+# Aula 06 - Exercícios POO
